@@ -1,3 +1,5 @@
+A Python script to visualize data points of the weather for 500+ cities across the world of varying distance from the equator. 
+
 ## WeatherPy
 
 What's the Weather Like?

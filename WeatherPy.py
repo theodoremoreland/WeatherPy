@@ -27,7 +27,7 @@ from ratelimit import limits
 import matplotlib.pyplot as plt
 
 # Custom
-import api_keys
+import api_keys # Uses the openweathermap.org API
 
 
 # In[3]:

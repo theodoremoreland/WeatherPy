@@ -4,8 +4,6 @@ What's the Weather Like?
 
 For this project, I utilized Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
-Of course, the answer is a well known fact, but how could I personally prove it using Python?
-
 I created a series of scatter plots to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
@@ -20,4 +18,4 @@ I created a series of scatter plots to showcase the following relationships:
 * Saves both a CSV of all data retrieved and png images for each scatter plot.
 
 
-*This project was for an assignment as Washington University's Data Analytics Boot Camp (2019)*
+*This project was for an assignment as Washington University's Data Analytics Boot Camp (2019).*

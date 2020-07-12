@@ -1,12 +1,7 @@
-A Python script to visualize data points of the weather for 500+ cities across the world of varying distance from the equator. 
-
 ## WeatherPy
 
-What's the Weather Like?
-
-For this project, I utilized Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
-
-I created a series of scatter plots to showcase the following relationships:
+A Python script to visualize data points of the weather for 500+ cities across the world of varying distance from the equator. 
+For this project, I utilized Python requests, an API, and JSON traversals to create a series of scatter plots to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
 * Humidity (%) vs. Latitude

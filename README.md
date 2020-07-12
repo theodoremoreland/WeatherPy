@@ -1,7 +1,7 @@
 ## WeatherPy
 
 A Python script to visualize data points of the weather for 500+ cities across the world of varying distance from the equator. 
-For this project, I utilized Python requests, an API, and JSON traversals to create a series of scatter plots to showcase the following relationships:
+For this project, I utilized Python requests, the OpenWeatherMap API, and JSON traversals to create a series of scatter plots to showcase the following relationships:
 
 * Temperature (F) vs. Latitude
 * Humidity (%) vs. Latitude
@@ -16,3 +16,20 @@ For this project, I utilized Python requests, an API, and JSON traversals to cre
 
 
 *This project was for an assignment as Washington University's Data Analytics Boot Camp (2019).*
+
+# Results
+
+## Processing Cities
+<img src="Images/processing_cities.PNG" width="600">
+
+## Temperature (F) vs. Latitude
+<img src="Images/Fig1.png" width="600">
+
+## Humidity (%) vs. Latitude
+<img src="Images/Fig2.png" width="600">
+
+## Cloudiness (%) vs. Latitude
+<img src="Images/Fig3.png" width="600">
+
+## Wind Speed (mph) vs. Latitude
+<img src="Images/Fig3.png" width="600">

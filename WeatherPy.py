@@ -1,25 +1,12 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # WeatherPy
-# ----
-# 
-# ### Analysis
-# * Of the cities tested, cities positioned at 0 degrees latitude experienced a smaller range of humidity than other cities, with a humidity no lower than 45%.
-# 
-# * Far more cities experienced 0% cloudiness as opposed to 100% cloudiness, outnumbering the latter by the dozens.
-# 
-# * Wind speeds cluster between 0 and 10 mph, regardless of location.
-
-# In[2]:
-
-
 # Native library
-import requests
 import time
 import json
 
 # Third party
+import requests
 import numpy as np
 import pandas as pd
 from citipy import citipy
@@ -30,21 +17,12 @@ import matplotlib.pyplot as plt
 import api_keys # Uses the openweathermap.org API
 
 
-# In[3]:
-
-
 # Output File (CSV)
-output_data_file = "Resources/cities.csv"
+output_data_file = "resources/cities.csv"
 
 # Range of latitudes and longitudes
 lat_range = (-90, 90)
 lng_range = (-180, 180)
-
-
-# ## Generate Cities List
-
-# In[4]:
-
 
 # List for holding lat_lngs and cities
 lat_lngs = []
@@ -67,13 +45,9 @@ for lat_lng in lat_lngs:
 len(cities)
 
 
-# ### Perform API Calls
+# Perform API Calls
 # * Perform a weather check on each city using a series of successive API calls.
 # * Include a print log of each city as it'sbeing processed (with the city number and city name).
-# 
-
-# In[5]:
-
 
 # Components of api endpoint(s)
 url = "http://api.openweathermap.org/data/2.5/weather?"
@@ -130,9 +104,6 @@ call_api()
 # * Export the city data into a .csv.
 # * Display the DataFrame
 
-# In[6]:
-
-
 # Creates table/DataFrame from the "city_data" dictionary
 city_data_df = pd.DataFrame(city_data)
 
@@ -142,10 +113,6 @@ city_data_df.to_csv(output_data_file, index_label="City_ID")
 # Previews table/DataFrame
 city_data_df
 
-
-# In[7]:
-
-
 # Creates variables for relevant table columns
 lat = city_data_df["Lat"]
 max_temp = city_data_df["Max Temp"]
@@ -154,14 +121,11 @@ cloudiness = city_data_df["Cloudiness"]
 wind_speed = city_data_df["Wind Speed"]
 
 
-# ### Plotting the Data
+# Plotting the Data
 # * Use proper labeling of the plots using plot titles (including date of analysis) and axes labels.
 # * Save the plotted figures as .pngs.
 
-# #### Latitude vs. Temperature Plot
-
-# In[8]:
-
+# Latitude vs. Temperature Plot
 
 # Establishes size for the next visualization/graph
 plt.figure(figsize=(10,8))
@@ -176,13 +140,7 @@ plt.ylabel("Max Temperature (F)")
 plt.grid(True)
 
 # Exports graph as a png image file (steps are repeated for the rest of the script...)
-plt.savefig("Images/Fig1.png")
-
-
-# #### Latitude vs. Humidity Plot
-
-# In[9]:
-
+plt.savefig("images/Fig1.png")
 
 plt.figure(figsize=(10,8))
 
@@ -193,13 +151,9 @@ plt.xlabel("Latitude")
 plt.ylabel("Humidity (%)")
 plt.grid(True)
 
-plt.savefig("Images/Fig2.png")
+plt.savefig("images/Fig2.png")
 
-
-# #### Latitude vs. Cloudiness Plot
-
-# In[10]:
-
+# Latitude vs. Cloudiness Plot
 
 plt.figure(figsize=(10,8))
 
@@ -210,13 +164,10 @@ plt.xlabel("Latitude")
 plt.ylabel("Cloudiness (%)")
 plt.grid(True)
 
-plt.savefig("Images/Fig3.png")
+plt.savefig("images/Fig3.png")
 
 
-# #### Latitude vs. Wind Speed Plot
-
-# In[11]:
-
+# Latitude vs. Wind Speed Plot
 
 plt.figure(figsize=(10,8))
 
@@ -227,5 +178,5 @@ plt.xlabel("Latitude")
 plt.ylabel("Wind Speed (mph)")
 plt.grid(True)
 
-plt.savefig("Images/Fig4.png")
+plt.savefig("images/Fig4.png")
 

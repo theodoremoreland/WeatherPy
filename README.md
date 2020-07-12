@@ -15,7 +15,7 @@ For this project, I utilized Python requests, the OpenWeatherMap API, and JSON t
 * Saves both a CSV of all data retrieved and png images for each scatter plot.
 
 
-*This project was for an assignment as Washington University's Data Analytics Boot Camp (2019).*
+*This project was for an assignment at Washington University's Data Analytics Boot Camp (2019).*
 
 # Results
 

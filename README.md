@@ -20,16 +20,16 @@ For this project, I utilized Python requests, the OpenWeatherMap API, and JSON t
 # Results
 
 ## Processing Cities
-<img src="Images/processing_cities.PNG" width="600">
+<img src="presentation/processing_cities.PNG" width="600">
 
 ## Temperature (F) vs. Latitude
-<img src="Images/Fig1.png" width="600">
+<img src="presentation/Fig1.png" width="600">
 
 ## Humidity (%) vs. Latitude
-<img src="Images/Fig2.png" width="600">
+<img src="presentation/Fig2.png" width="600">
 
 ## Cloudiness (%) vs. Latitude
-<img src="Images/Fig3.png" width="600">
+<img src="presentation/Fig3.png" width="600">
 
 ## Wind Speed (mph) vs. Latitude
-<img src="Images/Fig3.png" width="600">
+<img src="presentation/Fig3.png" width="600">
